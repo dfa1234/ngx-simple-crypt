@@ -1,1 +1,2 @@
-export { default as XORCipher } from './dist/xorcipher.js';
+import Module from './dist/xorcipher.min';
+export default new Module();
