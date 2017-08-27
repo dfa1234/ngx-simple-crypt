@@ -1,2 +1,1 @@
-import XORCipher from './dist/xorcipher.min'
-export default XORCipher;
+export { default as XORCipher } from './dist/xorcipher.js';
