@@ -1,0 +1,32 @@
+{
+  "name": "simple-crypt",
+  "version": "0.0.1",
+  "description": "angular2 module for simple encryption through XOR cipher method",
+  "main": "index.js",
+  "scripts": {
+    "build":"webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfa1234/ng2-simple-crypt.git"
+  },
+  "keywords": [
+    "angular2",
+    "XORcipher",
+    "cryptography",
+    "encryption"
+  ],
+  "author": "dfa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfa1234/ng2-simple-crypt"
+  },
+  "homepage": "https://github.com/dfa1234/ng2-simple-crypt#readme",
+  "devDependencies": {
+    "ts-loader": "^2.3.4",
+    "typescript": "^2.4.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
