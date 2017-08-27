@@ -1,5 +1,5 @@
 {
-  "name": "simple-crypt",
+  "name": "ng2-simple-crypt",
   "version": "0.0.1",
   "description": "angular2 module for simple encryption through XOR cipher method",
   "main": "index.js",
