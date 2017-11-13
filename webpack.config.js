@@ -1,9 +1,10 @@
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-    entry: ['./xorcipher.ts'],
+    devtool: 'source-map',
+    entry: ['./index.ts'],
     output: {
-        filename: "./dist/xorcipher.min.js",
+        filename: "./index.min.js",
         libraryTarget:"commonjs2"
     },
     resolve: {
@@ -16,6 +17,6 @@ module.exports = {
         }]
     },
     plugins: [
-      new UglifyJSPlugin({minimize: true})
+      new UglifyJSPlugin({minimize: true, sourceMap: true })
     ]
 };

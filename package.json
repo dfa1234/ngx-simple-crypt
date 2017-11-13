@@ -4,7 +4,7 @@
   "description": "angular2 module for simple encryption through XOR cipher method",
   "main": "index.js",
   "scripts": {
-    "build":"webpack"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,8 @@
     "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "source-map-loader": "^0.2.3"
   }
 }

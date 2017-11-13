@@ -1,26 +1,41 @@
-## ng2-simple-crypt
+## ngx-simple-crypt
 
-Javascript module (compatible angular2+ but not limited to) for encryption through XOR cipher method.
+Javascript module (compatible with any angular version, but not limited to angular) for encryption through XOR cipher method.
 
-Useful for hiding non sensitive informations, like code obfuscations, etc...
+Useful for hiding non sensitive informations, like code obfuscations, QR code datas, etc...
 
 ### Import
 ```sh
-npm i ng2-simple-crypt --save
+npm i ngx-simple-crypt
+```
+or
+```sh
+yarn add ngx-simple-crypt
 ```
 
 ### Usage
 
+No module import needed, you can use anywhere:
+
 ```javascript
-import SimpleCrypt from 'ng2-simple-crypt';
+import {SimpleCrypt} from "ngx-simple-crypt";
 ```
 
 ```javascript
-let encodedString = SimpleCrypt.encode("my-key","You are not supposed to read this");
+let simpleCrypt = new SimpleCrypt();
+
+let encodedString = simpleCrypt.encode("my-key","You are not supposed to read this");
 console.log(encodedString);// "NBZYSwQLCFlDBBFZHgxdGwoKCB0NHwpZHxxMD0UNBRBe"
 
-let decodedString = SimpleCrypt.decode("my-key",encodedString);
+let decodedString = simpleCrypt.decode("my-key",encodedString);
 console.log(decodedString);// "You are not supposed to read this"
+```
+
+You can also use the static methods for encoding/decoding Objects directly:
+
+```javascript
+let encodedObjectAsString:string = SimpleCrypt.encodeDefault("my-key", {data:'very important stuff'});
+let object:{} = SimpleCrypt.decodeDefault("my-key", encodedObjectAsString);
 ```
 
 
